@@ -16,8 +16,10 @@ export const Menu = styled.div`
   height: 100vh;
   padding: 20px;
   background-color: #2e343f;
-  box-shadow: 10px 0px 10px 1px #aaaaaa;
   margin-right: 10px;
+  &:hover {
+    box-shadow: 10px 0px 10px 1px #aaaaaa;
+  }
 `;
 
 export const MenuOnThisPage = styled.div`
@@ -28,7 +30,16 @@ export const MenuOnThisPage = styled.div`
   width: 100%;
   height: 100vh;
   padding: 20px;
-  background-color: #2e343f;
-  box-shadow: -10px 0px 10px 1px #aaaaaa;
+  background-color: #ffffff;
   margin-left: 10px;
+  &:hover {
+    box-shadow: -10px 0px 10px 1px #aaaaaa;
+  }
 `;
+
+export const ContentContainer = styled.div`
+  margin: 10px;
+  padding: 5px;
+  width: 100%;
+`;
+
