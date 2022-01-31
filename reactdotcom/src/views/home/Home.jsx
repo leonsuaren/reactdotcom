@@ -32,6 +32,10 @@ export const Home = () => {
     <HomeContainer>
         <LinkToButton href='https://github.com/leonsuaren/reactdotcom' target="_blank">Github Repository</LinkToButton>
         <HeadTitle>Overview</HeadTitle>
+        <p>Let's say you want to create a nice looking modern Website, and you want to do it fast! Well <strong>React Dot Components</strong>  gives you the power of create something unique and flexible 
+          by adding to you projects all you need. From a button to a responsive layout...
+        </p>
+        <HeadTitle>How it works !</HeadTitle>
     </HomeContainer>
   )
 }
