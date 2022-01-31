@@ -1,8 +1,9 @@
-import React, { Fragment, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import anime from 'animejs';
-import { HomeContainer, Menu, MenuOnThisPage, ContentContainer } from './styled';
+import { HomeContainer } from './styled';
 
 import { LinkToButton } from '../../components/buttons/link-to-button';
+import { HeadTitle } from './../../global/globalStyled';
 
 export const Home = () => {
 
@@ -29,17 +30,8 @@ export const Home = () => {
 
   return (
     <HomeContainer>
-      <Menu id="menuAnimation">
-        <h3>.components</h3>
-        <h3>hola</h3>
-        <h3>hola</h3>
-      </Menu>
-      <ContentContainer>
         <LinkToButton href='https://github.com/leonsuaren/reactdotcom' target="_blank">Github Repository</LinkToButton>
-      </ContentContainer>
-      <MenuOnThisPage id="menuThisAnimetion">
-        <h3>On this page</h3>
-      </MenuOnThisPage>
+        <HeadTitle>Overview</HeadTitle>
     </HomeContainer>
   )
 }

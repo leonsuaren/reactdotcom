@@ -1,12 +1,16 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyled = createGlobalStyle`
   body {
     background: white;
-    color: #a6c2ac;
+    color: #2e343f;
     font-family: 'Architects Daughter', cursive;
   }
   `;
+
+export const HeadTitle = styled.h1`
+  font-size: 2.5rem;
+`;
   
 // font-family: 'Lora', serif;
 // background: #2e343f;
