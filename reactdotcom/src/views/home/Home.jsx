@@ -10,27 +10,12 @@ export const Home = () => {
   const animationRef = useRef(null);
 
   useEffect(() => {
-    var hrEl = document.getElementById('hrAnimation');
-    anime.remove(hrEl);
 
-    var timeLine = anime.timeline({
-      easing: 'easeOutExpo',
-      duration: 750
-    });
-
-    animationRef.current = anime({
-      targets: '#hrAnimation',
-      width: [500, 1000],
-      loop: true,
-      duration: 1000,
-      direction: 'alternate',
-      autoplay: true
-    })
   }, []);
 
   return (
     <HomeContainer>
-        <hr id='hrAnimation'/>
+        <hr/>
         <br />
         <LinkToButton href='https://github.com/leonsuaren/reactdotcom' target="_blank">Github Repository</LinkToButton>
         <HeadTitle>Overview</HeadTitle>
