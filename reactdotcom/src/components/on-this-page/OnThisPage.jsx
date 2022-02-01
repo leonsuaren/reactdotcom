@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
-import anime from 'animejs';
 import { MenuOnThisPage } from './styled';
+
+import anime from 'animejs';
+import { thisPageAnimation } from './anime';
 
 export const OnThisPage = () => {
 
@@ -9,13 +11,7 @@ export const OnThisPage = () => {
   useEffect(() => {
     var thisPageEl = document.getElementById('thisPageAnimation');
     anime.remove(thisPageEl);
-
-    animationRef.current = anime({
-      targets: '#thisPageAnimation',
-      translateX: [350, 0],
-      delay: 600,
-      easing: 'easeOutExpo'
-    });
+    animationRef.current = anime(thisPageAnimation);
   }, [])
 
   return (

@@ -1,7 +1,9 @@
 import React, { useRef, useEffect } from 'react';
-import anime from 'animejs';
 import { MenuWrapper, MenuContent } from './styled';
 import { Link } from 'react-router-dom';
+
+import anime from 'animejs';
+import { menuAnimation } from './anime';
 
 export const Menu = () => {
   const animationRef = useRef(null);
@@ -9,13 +11,7 @@ export const Menu = () => {
   useEffect(() => {
     var menuEl = document.getElementById('menuAnimation');
     anime.remove(menuEl);
-
-    animationRef.current = anime({
-      targets: '#menuAnimation',
-      translateX: [-350, 0],
-      delay: 500,
-      easing: 'easeOutExpo'
-    });
+    animationRef.current = anime(menuAnimation);
 
   }, []);
 
