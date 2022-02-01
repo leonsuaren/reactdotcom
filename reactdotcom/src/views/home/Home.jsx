@@ -6,15 +6,23 @@ import { LinkToButton } from '../../components/buttons/link-to-button';
 import { HeadTitle } from './../../global/globalStyled';
 
 export const Home = () => {
-
+  
   const animationRef = useRef(null);
-
+  
   useEffect(() => {
+    var containerEl = document.getElementById('homeContainerAnimation');
+    anime.remove(containerEl);
+
+    animationRef.current = anime({
+      targets: '#homeContainerAnimation',
+      translateY: [900, 0],
+      easing: 'easeInOutQuint'
+    });
 
   }, []);
 
   return (
-    <HomeContainer>
+    <HomeContainer id='homeContainerAnimation'>
         <hr/>
         <br />
         <LinkToButton href='https://github.com/leonsuaren/reactdotcom' target="_blank">Github Repository</LinkToButton>

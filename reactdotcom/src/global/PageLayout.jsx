@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: grid;
   grid-template-columns: 15% 70% 15%;
-  margin: 0px 50px;
+  margin: 0px 200px;
 `;
 
 const MainContainer = styled.div`

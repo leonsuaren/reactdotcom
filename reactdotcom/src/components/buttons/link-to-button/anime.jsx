@@ -5,6 +5,6 @@ export const linkButtonAnimation = {
   autoplay: true,
   loop: true,
   direction: 'alternate',
-  duration: 2000,
+  duration: 3000,
   easing: 'easeInOutSine'
 };
