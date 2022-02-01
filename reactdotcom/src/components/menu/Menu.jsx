@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+import anime from 'animejs';
 import { MenuWrapper, MenuContent } from './styled';
 import { Link } from 'react-router-dom';
 
 export const Menu = () => {
+  const animationRef = useRef(null);
+
+  useEffect(() => {
+    var menuEl = document.getElementById('menuAnimation');
+    anime.remove(menuEl);
+
+    animationRef.current = anime({
+      targets: '#menuAnimation',
+      translateX: [-350, 0],
+      delay: 500,
+      easing: 'easeOutExpo'
+    });
+
+  }, []);
+
   return (
-    <MenuWrapper>
+    <MenuWrapper id='menuAnimation'>
       <h3>.components</h3>
       <div>
         <MenuContent>

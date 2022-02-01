@@ -10,26 +10,10 @@ export const Home = () => {
   const animationRef = useRef(null);
 
   useEffect(() => {
-    var menuEl = document.getElementById('menuAnimation');
-    var menuThisEl = document.getElementById('menuThisAnimetion');
     var hrEl = document.getElementById('hrAnimation');
 
-    anime.remove(menuEl);
-    anime.remove(menuThisEl);
     anime.remove(hrEl);
 
-    // animationRef.current = anime({
-    //   targets: '#menuAnimation',
-    //   translateX: [-350, 0],
-    //   delay: 1500,
-    //   easing: 'easeOutExpo'
-    // });
-    // animationRef.current = anime({
-    //   targets: '#menuThisAnimetion',
-    //   translateX: [350, 0],
-    //   delay: 2000,
-    //   easing: 'easeOutExpo'
-    // });
     animationRef.current = anime({
       targets: '#hrAnimation',
       width: [10, 100],

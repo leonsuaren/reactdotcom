@@ -37,12 +37,6 @@ export const GetStarted = () => {
       anime.remove(squareEl);
       anime.remove(welcomeText);
       anime.remove(buttonEl);
-      // animationRef.current = anime({
-      //   targets: '.singleSquare',
-      //   easing: 'easeOutSine',
-      //   opacity: 0,
-      //   delay: 1000
-      // })
 
       animationRef.current = anime({
         targets: '#startButton',
