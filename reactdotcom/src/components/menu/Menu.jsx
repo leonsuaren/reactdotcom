@@ -12,6 +12,10 @@ export const Menu = () => {
     BrandAnimation();
   }, []);
 
+  const onHandleAnimation = () => {
+    BrandAnimation();
+  }
+
   return (
     <Fragment>
     <BigDot id='bigDotAnimation'>

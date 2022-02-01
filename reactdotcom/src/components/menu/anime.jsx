@@ -1,9 +1,7 @@
 import anime from 'animejs';
 
 export const BrandAnimation = () => {
-  var timeLine = anime.timeline({
-    duration: 500,
-  })
+  var timeLine = anime.timeline()
 
   timeLine.add({
     targets: '#menuAnimation',
