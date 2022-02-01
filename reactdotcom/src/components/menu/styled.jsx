@@ -16,6 +16,7 @@ export const MenuWrapper = styled.div`
 `;
 
 export const MenuContent = styled.div`
-  display: grid;
-  grid-template-rows: 10% 80% 10%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 5px;
 `;
