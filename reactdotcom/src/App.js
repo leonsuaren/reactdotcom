@@ -4,6 +4,7 @@ import { GlobalStyled } from './global/globalStyled';
 
 import { GetStarted } from './../src/views/get-started';
 import { Home } from './views/home';
+import { Components } from './views/components';
 import { PageLayout } from './global/PageLayout';
 
 
@@ -15,14 +16,13 @@ function App() {
         <Routes>
           <Route path='/' element={<GetStarted />} />
         </Routes>
-      </Router>
-      <PageLayout>
-        <Router>
+        <PageLayout>
           <Routes>
             <Route path='/home' element={<Home />} />
+            <Route path='/components' element={<Components />} />
           </Routes>
-        </Router>
-      </PageLayout>
+        </PageLayout>
+      </Router>
     </div>
   );
 }

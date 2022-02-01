@@ -8,7 +8,6 @@ import { GetContainer, Button, WelcomeText, FourSquare, SingleSquare, SquareCont
 
 export const GetStarted = () => {
   const navigate = useNavigate();
-  console.log(animeTest);
   const animationRef = useRef(null);
 
   useEffect(() => {
