@@ -1,6 +1,6 @@
 export const linkButtonAnimation = {
   targets: '#linkButtonAnimation',
-  backgroundColor: [ '#4674C4', '#FFFFFF' ],
+  backgroundColor: [ '#93f856', '#FFFFFF' ],
   color: [ '#FFFFFF',  '#2E343f'],
   autoplay: true,
   loop: true,
