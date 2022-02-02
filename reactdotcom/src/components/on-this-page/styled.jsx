@@ -10,7 +10,5 @@ export const MenuOnThisPage = styled.div`
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
-  &:hover {
-    box-shadow: -10px 0px 10px 1px #aaaaaa;
-  }
+  box-shadow: -10px 0px 10px 1px #aaaaaa;
 `;

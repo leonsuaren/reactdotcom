@@ -7,5 +7,14 @@ export const HomeContainer = styled.div`
   height: 100%;
 `;
 
+export const HeadContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+`;
+
 
 

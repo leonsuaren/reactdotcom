@@ -1,3 +1,10 @@
+export const homeAnimation = {
+  targets: '#homeContainerAnimation',
+  translateY: [900, 0],
+  delay: 9000,
+  easing: 'easeInOutQuint'
+};
+
 //Example of timeline
 // var uno = document.querySelector('.uno');
 // var dos = document.querySelector('.dos');

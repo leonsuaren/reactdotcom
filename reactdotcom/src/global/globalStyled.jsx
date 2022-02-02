@@ -10,6 +10,7 @@ export const GlobalStyled = createGlobalStyle`
 
 export const HeadTitle = styled.h1`
   font-size: 2.5rem;
+  display: inline-block;
 `;
   
 // font-family: 'Lora', serif;

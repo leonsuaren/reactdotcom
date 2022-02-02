@@ -1,6 +1,17 @@
-export const thisPageAnimation = {
-  targets: '#thisPageAnimation',
-  translateX: [350, 0],
-  delay: 650,
-  easing: 'easeOutExpo'
+import anime from 'animejs';
+
+// export const thisPageAnimation = {
+//   targets: '#thisPageAnimation',
+//   translateX: [450, 0],
+//   delay: 650,
+//   easing: 'easeOutExpo'
+// };
+
+export const ThisPageAnimation = () => {
+  anime({
+    targets: '#thisPageAnimation',
+    translateX: [450, 0],
+    delay: 650,
+    easing: 'easeOutExpo'
+  });
 };

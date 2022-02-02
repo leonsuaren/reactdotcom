@@ -17,13 +17,12 @@ export const BrandAnimation = () => {
     .add({
       targets: '#dotAnimation',
       keyframes: [
-        { translateY: 120, delay: 500 },
-        { translateX: 10, delay: 500 },
-        { translateX: -10, delay: 500 },
-        { translateX: 0, delay: 500 },
-        { translateY: -50, delay: 500 }
+        { translateY: 120, delay: 800, easing: 'easeOutBounce' },
+        { translateX: 10, delay: 500, easing: 'easeOutBounce' },
+        { translateX: -10, delay: 500, easing: 'easeOutBounce' },
+        { translateX: 0, delay: 500, easing: 'easeOutBounce' },
+        { translateY: -50, delay: 500, easing: 'easeOutBounce' }
       ],
-      easing: 'easeOutInBounce',
       duration: 500,
       loop: 2,
       direction: 'reverse'
@@ -38,7 +37,7 @@ export const BrandAnimation = () => {
     .add({
       targets: '#dotAnimation',
       endDelay: 1500,
-      translateY: [100, 80],
-      easing: 'easeInOutBack'
+      translateY: [100, 0],
+      easing: 'easeOutBounce'
     })
 }

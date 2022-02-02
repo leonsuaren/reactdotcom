@@ -10,9 +10,7 @@ export const MenuWrapper = styled.div`
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
-  &:hover {
-    box-shadow: 10px 0px 10px 1px #aaaaaa;
-}
+  box-shadow: 10px 0px 10px 1px #aaaaaa;
 `;
 
 export const MenuContent = styled.div`
@@ -34,8 +32,8 @@ export const Dot = styled.div`
   display: inline-block;
   margin: 0px 5px;
   padding: 0px;
-  position: relative;
-  top: -80px;
+  /* position: relative;
+  top: -80px; */
 `;
 
 export const Letter = styled.div`

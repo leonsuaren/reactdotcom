@@ -5,7 +5,6 @@ export const DotStyled = styled.div`
   height: 15px;
   background-color: #dbef46;
   border-radius: 50%;
-  display: inline-block;
-  margin: 0px 5px;
+  margin: 10px;
   padding: 0px;
 `;

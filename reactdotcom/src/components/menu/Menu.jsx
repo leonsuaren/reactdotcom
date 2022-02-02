@@ -1,20 +1,12 @@
-import React, { useRef, useEffect, Fragment } from 'react';
+import React, { useEffect, Fragment } from 'react';
 import { MenuWrapper, MenuContent, DotBox, Letter, Dot, BigDot, LeftEye, RigthEye } from './styled';
 import { Link } from 'react-router-dom';
 
-import { BrandAnimation } from './anime';
-import anime from 'animejs';
-
 export const Menu = () => {
-  const animationRef = useRef(null);
 
   useEffect(() => {
-    BrandAnimation();
+    // BrandAnimation();
   }, []);
-
-  const onHandleAnimation = () => {
-    BrandAnimation();
-  }
 
   return (
     <Fragment>
@@ -24,22 +16,22 @@ export const Menu = () => {
     </BigDot>
       <MenuWrapper id='menuAnimation'>
         <DotBox>
-          <Letter className='letter' id='firstR'>R</Letter>
-          <Letter className='letter' id='firstE'>e</Letter>
-          <Letter className='letter' id='firstA'>a</Letter>
-          <Letter className='letter' id='firstC'>c</Letter>
-          <Letter className='letter' id='firstT'>t</Letter>
+          <Letter className='letter'>R</Letter>
+          <Letter className='letter'>e</Letter>
+          <Letter className='letter'>a</Letter>
+          <Letter className='letter'>c</Letter>
+          <Letter className='letter'>t</Letter>
           <Dot id='dotAnimation'></Dot>
-          <Letter className='letter' id='secondC'>C</Letter>
-          <Letter className='letter' id='firstO'>o</Letter>
-          <Letter className='letter' id='firstM'>m</Letter>
-          <Letter className='letter' id='firstP'>p</Letter>
-          <Letter className='letter' id='secondO'>o</Letter>
-          <Letter className='letter' id='firstN'>n</Letter>
-          <Letter className='letter' id='secondE'>e</Letter>
-          <Letter className='letter' id='secondN'>n</Letter>
-          <Letter className='letter' id='secondT'>t</Letter>
-          <Letter className='letter' id='firstS'>s</Letter>
+          <Letter className='letter'>C</Letter>
+          <Letter className='letter'>o</Letter>
+          <Letter className='letter'>m</Letter>
+          <Letter className='letter'>p</Letter>
+          <Letter className='letter'>o</Letter>
+          <Letter className='letter'>n</Letter>
+          <Letter className='letter'>e</Letter>
+          <Letter className='letter'>n</Letter>
+          <Letter className='letter'>t</Letter>
+          <Letter className='letter'>s</Letter>
         </DotBox>
         <div>
           <MenuContent>

@@ -29,41 +29,13 @@ export const WelcomeText = styled.h1`
   color: #c6140d;
 `; 
 
-export const SquareContainer = styled.div`
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-`;
-
-export const FourSquare = styled.div`
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(20, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  width: 100%;
-  height: 100%;
-`;
-
-export const SingleSquare = styled.div`
-  width: 100px;
-  height: 100px;
-  background-color: #2e343f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Dot = styled.div`
-  width: 2px;
-  height: 2px;
-  background: #ffffff;
-  border-radius: 50%;
-  z-index: 0;
-`;
-
 export const Span = styled.span`
   font-family: 'Architects Daughter', cursive;
   color: #a6c2ac;
+`;
+
+export const Background = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-color: #2e343f;
 `;
