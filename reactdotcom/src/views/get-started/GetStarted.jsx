@@ -5,26 +5,30 @@ import { startButtonAnimation } from './anime';
 
 import { useNavigate } from 'react-router-dom';
 
-import { GetContainer, Button, WelcomeText, Span, Background, DotAnimation, Dot } from './styled';
+import { GetContainer, Button, WelcomeText, Span, Background, DotAnimation, Dot, OutsiteDot } from './styled';
 
 export const GetStarted = () => {
   const navigate = useNavigate();
-
+  var animation;
   useEffect(() => {
     anime(startButtonAnimation);
-    anime({
+    var mainAnimation = anime({
       targets: '.dotAnimation',
       loop: true,
-      // direction: 'alternate',
+      direction: 'reverse',
       scale: [
-        { value: 0, easing: 'easeOutSine', duration: 500 },
-        { value: 1, easing: 'easeInOutQuad', duration: 1200 }
+        { value: 0, easing: 'easeOutSine', duration: 300 },
+        { value: 1, easing: 'easeInOutQuad', duration: 300 }
       ],
-      delay: anime.stagger(100, { grid: [45, 22], from: 'center' }),
+      delay: anime.stagger(200, { grid: [30, 15], from: 'center' }),
+      autoplay: false
     });
+    mainAnimation.play();
+    animation = mainAnimation;
   }, []);
 
   const hangleOnClick = () => {
+    // animation.pause()
     setTimeout(() => { navigate('/home') }, 3000);
   }
 
@@ -32,7 +36,7 @@ export const GetStarted = () => {
     <Background>
       <DotAnimation>
         {
-          // Array(990).fill(<Dot className='dotAnimation' />)
+          Array(450).fill(<OutsiteDot className='dotAnimation' ><Dot/></OutsiteDot>)
         }
       </DotAnimation>
       <GetContainer>

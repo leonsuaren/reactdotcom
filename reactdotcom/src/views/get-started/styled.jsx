@@ -27,7 +27,7 @@ export const Button = styled.button`
 `;
 
 export const WelcomeText = styled.h1`
-  color: #c6140d;
+  color: #93f856;
 `; 
 
 export const Span = styled.span`
@@ -43,8 +43,8 @@ export const Background = styled.div`
 
 export const DotAnimation = styled.div`
   display: grid;
-  grid-template-columns: repeat(45, 1fr);
-  grid-template-rows: repeat(22, 1fr);
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(15, 1fr);
   position: absolute;
   left: 0px;
   top:0px;
@@ -61,5 +61,17 @@ export const Dot = styled.div`
   padding: 0px;
 `;
 
-// export const 
+export const OutsiteDot = styled.div`
+ width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    opacity: .03;
+`;
+
   // box-shadow: 0 5px 15px #FFFFFF;
