@@ -23,6 +23,7 @@ export const Button = styled.button`
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
+  box-shadow: 0 5px 15px #93f856;
 `;
 
 export const WelcomeText = styled.h1`

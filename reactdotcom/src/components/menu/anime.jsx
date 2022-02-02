@@ -17,7 +17,7 @@ export const BrandAnimation = () => {
     .add({
       targets: '#dotAnimation',
       keyframes: [
-        { translateY: 120, delay: 800, easing: 'easeOutBounce' },
+        { translateY: 100, delay: 800, easing: 'easeOutBounce' },
         { translateX: 10, delay: 500, easing: 'easeOutBounce' },
         { translateX: -10, delay: 500, easing: 'easeOutBounce' },
         { translateX: 0, delay: 500, easing: 'easeOutBounce' },
@@ -25,19 +25,23 @@ export const BrandAnimation = () => {
       ],
       duration: 500,
       loop: 2,
-      direction: 'reverse'
+      // direction: 'reverse'
     })
     .add({
       targets: '#bigDotAnimation',
       keyframes: [
-        { translateX: 200, delay: 500, easing: 'easeOutExpo' },
-        { translateX: -200, delay: 1500, easing: 'easeOutExpo' }
+        { translateX: 110, delay: 500, easing: 'easeOutExpo' },
+        { translateX: -110, delay: 1500, easing: 'easeOutExpo' }
       ]
     })
     .add({
       targets: '#dotAnimation',
       endDelay: 1500,
-      translateY: [100, 0],
-      easing: 'easeOutBounce'
+      keyframes: [
+        {translateY: -50, delay: 100},
+        {translateY: 80, delay: 100},
+        {translateY: 0, delay: 100, easing: 'easeOutBounce'}
+      ],
+      duration: 1500
     })
 }

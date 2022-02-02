@@ -5,8 +5,8 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 15% 70% 15%;
-  margin: 0px 200px;
+  grid-template-columns: 25% 50% 25%;
+  margin: 0px 0px;
 `;
 
 const MainContainer = styled.div`

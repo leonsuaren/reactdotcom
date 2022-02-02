@@ -6,9 +6,14 @@ export const MenuWrapper = styled.div`
   box-sizing: border-box;
   padding: 5px;
   align-items: center;
-  justify-items: start;
-  width: 100%;
+  justify-content: start;
+  width: 50%;
   height: 100vh;
+`;
+
+export const MenuContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
   background-color: #ffffff;
   box-shadow: 10px 0px 10px 1px #aaaaaa;
 `;
@@ -20,7 +25,6 @@ export const MenuContent = styled.div`
 `;
 
 export const DotBox = styled.div`
-  width: 100%;
   height: 30px;
 `;
 
