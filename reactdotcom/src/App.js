@@ -16,6 +16,8 @@ function App() {
         <Routes>
           <Route path='/' element={<GetStarted />} />
         </Routes>
+      </Router>
+      <Router>
         <PageLayout>
           <Routes>
             <Route path='/home' element={<Home />} />

@@ -40,3 +40,26 @@ export const Background = styled.div`
   height: 100vh;
   background-color: #2e343f;
 `;
+
+export const DotAnimation = styled.div`
+  display: grid;
+  grid-template-columns: repeat(45, 1fr);
+  grid-template-rows: repeat(22, 1fr);
+  position: absolute;
+  left: 0px;
+  top:0px;
+  width: 100vh;
+  height: 100vh;
+`;
+
+export const Dot = styled.div`
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: linear-gradient(#FFFFFF, #53544d);
+  margin: 10px;
+  padding: 0px;
+`;
+
+// export const 
+  // box-shadow: 0 5px 15px #FFFFFF;
