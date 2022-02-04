@@ -10,6 +10,18 @@ export const startButtonAnimation = {
   backgroundColor: ['#93f856', '#dbef46'], 
 }
 
+export const startDotAnimation = {
+  targets: '.dotAnimation',
+  loop: true,
+  direction: 'reverse',
+  scale: [
+    { value: 0, easing: 'easeOutSine', duration: 300 },
+    { value: 1, easing: 'easeInOutQuad', duration: 300 }
+  ],
+  delay: anime.stagger(200, { grid: [30, 15], from: 'center' }),
+  autoplay: false
+};
+
 // export const dotAnimation = {
 //   targets: '.dotAnime',
 //   loop: true,

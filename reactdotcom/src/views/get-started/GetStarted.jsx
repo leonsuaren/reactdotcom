@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import anime from 'animejs';
-import { startButtonAnimation } from './anime';
+import { startButtonAnimation, startDotAnimation } from './anime';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -12,24 +12,13 @@ export const GetStarted = () => {
   var animation;
   useEffect(() => {
     anime(startButtonAnimation);
-    var mainAnimation = anime({
-      targets: '.dotAnimation',
-      loop: true,
-      direction: 'reverse',
-      scale: [
-        { value: 0, easing: 'easeOutSine', duration: 300 },
-        { value: 1, easing: 'easeInOutQuad', duration: 300 }
-      ],
-      delay: anime.stagger(200, { grid: [30, 15], from: 'center' }),
-      autoplay: false
-    });
+    var mainAnimation = anime(startDotAnimation);
     mainAnimation.play();
     animation = mainAnimation;
   }, []);
 
   const hangleOnClick = () => {
-    // animation.pause()
-    setTimeout(() => { navigate('/home') }, 3000);
+    setTimeout(() => { navigate('/home') }, 1000);
   }
 
   return (
