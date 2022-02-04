@@ -2,6 +2,8 @@ import React, { useEffect, Fragment } from 'react';
 import { MenuWrapper, MenuContent, DotBox, Letter, Dot, BigDot, LeftEye, RigthEye, MenuContainer } from './styled';
 import { Link } from 'react-router-dom';
 
+import { MenuButton } from '../../components/buttons/menu-button';
+
 export const Menu = () => {
 
   useEffect(() => {
@@ -15,6 +17,7 @@ export const Menu = () => {
         <RigthEye className='eye' />
       </BigDot>
       <MenuContainer>
+        <div />
         <MenuWrapper id='menuAnimation'>
           <DotBox>
             <Letter className='letter'>R</Letter>
@@ -40,9 +43,9 @@ export const Menu = () => {
                 <h4>Get Started</h4>
               </Link>
               <h4>Download</h4>
-              <Link to='/components'>
-                <h4>Components</h4>
-              </Link>
+                <MenuButton textContent={'Components'} colorPicker={'rock'}/>
+                <MenuButton textContent={'Button'}  position colorPicker={'lol'}/>
+  
               <h4>Theme</h4>
               <h4>Tutorial</h4>
               <h4>About</h4>

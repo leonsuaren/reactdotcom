@@ -5,6 +5,7 @@ export const HomeContainer = styled.div`
   box-sizing: border-box;
   width: 90%;
   height: 100%;
+  z-index: 0;
 `;
 
 export const HeadContainer = styled.div`

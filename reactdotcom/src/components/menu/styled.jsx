@@ -1,19 +1,16 @@
 import styled from 'styled-components';
 
 export const MenuWrapper = styled.div`
-  display: grid;
-  grid-template-rows: 10% 80% 10%;
   box-sizing: border-box;
   padding: 5px;
-  align-items: center;
-  justify-content: start;
-  width: 50%;
+  width: 100%;
   height: 100vh;
+  z-index: 2;
 `;
 
 export const MenuContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 20% 80%;
   background-color: #ffffff;
   box-shadow: 10px 0px 10px 1px #aaaaaa;
 `;
