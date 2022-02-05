@@ -14,15 +14,23 @@ export const GetStarted = () => {
     anime(startButtonAnimation);
     var mainAnimation = anime(startDotAnimation);
     mainAnimation.play();
-    animation = mainAnimation;
+    
+    var getContainerAnimation =  anime({
+      targets: '#getContainerAnimation', 
+      translateY: [0, -1000], 
+      autoplay: false,
+      duration: 5000
+      });
+    animation = getContainerAnimation;
   }, []);
 
   const hangleOnClick = () => {
+    animation.play();
     setTimeout(() => { navigate('/home') }, 1000);
   }
 
   return (
-    <Background>
+    <Background id="getContainerAnimation">
       <DotAnimation>
         {
           Array(450).fill(<OutsiteDot className='dotAnimation' ><Dot/></OutsiteDot>)

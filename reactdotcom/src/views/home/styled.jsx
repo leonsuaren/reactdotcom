@@ -15,6 +15,7 @@ export const HeadContainer = styled.div`
   margin: 0;
   padding: 0;
   align-items: center;
+  z-index: 0;
 `;
 
 

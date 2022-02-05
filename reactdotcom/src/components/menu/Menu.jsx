@@ -7,7 +7,7 @@ import { MenuButton } from '../../components/buttons/menu-button';
 export const Menu = () => {
 
   useEffect(() => {
-    // BrandAnimation();
+
   }, []);
 
   return (
@@ -16,9 +16,9 @@ export const Menu = () => {
         <LeftEye className='eye' />
         <RigthEye className='eye' />
       </BigDot>
-      <MenuContainer>
+      <MenuContainer id='menuAnimation'>
         <div />
-        <MenuWrapper id='menuAnimation'>
+        <MenuWrapper >
           <DotBox>
             <Letter className='letter'>R</Letter>
             <Letter className='letter'>e</Letter>
@@ -43,9 +43,9 @@ export const Menu = () => {
                 <h4>Get Started</h4>
               </Link>
               <h4>Download</h4>
-                <MenuButton textContent={'Components'} colorPicker={'rock'}/>
-                <MenuButton textContent={'Button'}  position colorPicker={'lol'}/>
-  
+              <MenuButton textContent={'Components'} colorPicker={'rock'} />
+              <MenuButton textContent={'Button'} position colorPicker={'lol'} />
+
               <h4>Theme</h4>
               <h4>Tutorial</h4>
               <h4>About</h4>

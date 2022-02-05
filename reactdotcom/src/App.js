@@ -15,15 +15,9 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<GetStarted />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/components' element={<Components />} />
         </Routes>
-      </Router>
-      <Router>
-        <PageLayout>
-          <Routes>
-            <Route path='/home' element={<Home />} />
-            <Route path='/components' element={<Components />} />
-          </Routes>
-        </PageLayout>
       </Router>
     </div>
   );

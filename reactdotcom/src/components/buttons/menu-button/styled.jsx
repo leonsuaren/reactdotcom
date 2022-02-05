@@ -8,7 +8,7 @@ export const ButtonWrapper = styled.div`
   position: ${ p => p.position ? 'absolute' : '' };
   left: ${ p => p.position ? 370 : '' }px;
   top: ${ p => p.position ? 100 : '' }px;
-  z-index: -5;
+  /* z-index: -5; */
 `;
 
 const color = ({colorPicker}) => {
@@ -72,7 +72,7 @@ export const ButtonStyled = styled.button`
   cursor: pointer;
   opacity: .9;
   box-shadow: 0px 10px 10px #CCCCCC;
-  z-index: -5;
+  /* z-index: -5; */
 `;
 
 export const Span = styled.span`

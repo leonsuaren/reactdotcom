@@ -7,6 +7,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 25% 50% 25%;
   margin: 0px 0px;
+  z-index: 2;
 `;
 
 const MainContainer = styled.div`

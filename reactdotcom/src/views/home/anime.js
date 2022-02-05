@@ -1,7 +1,7 @@
 export const homeAnimation = {
   targets: '#homeContainerAnimation',
   translateY: [900, 0],
-  delay: 10000,
+  delay: 500,
   easing: 'easeInOutQuint'
 };
 

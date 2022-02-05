@@ -5,7 +5,7 @@ export const BrandAnimation = () => {
 
   timeLine.add({
     targets: '#menuAnimation',
-    translateX: [-400, 0],
+    translateX: [-200, 0],
     easing: 'easeOutExpo'
   })
     .add({
@@ -16,32 +16,32 @@ export const BrandAnimation = () => {
     })
     .add({
       targets: '#dotAnimation',
-      keyframes: [
-        { translateY: 100, delay: 800, easing: 'easeOutBounce' },
-        { translateX: 10, delay: 500, easing: 'easeOutBounce' },
-        { translateX: -10, delay: 500, easing: 'easeOutBounce' },
-        { translateX: 0, delay: 500, easing: 'easeOutBounce' },
-        { translateY: -50, delay: 500, easing: 'easeOutBounce' }
-      ],
-      duration: 500,
-      loop: 2,
-      // direction: 'reverse'
-    })
-    .add({
-      targets: '#bigDotAnimation',
-      keyframes: [
-        { translateX: 110, delay: 500, easing: 'easeOutExpo' },
-        { translateX: -110, delay: 1500, easing: 'easeOutExpo' }
-      ]
-    })
-    .add({
-      targets: '#dotAnimation',
       endDelay: 1500,
       keyframes: [
         {translateY: -50, delay: 100},
-        {translateY: 80, delay: 100},
+        {translateY: 50, delay: 100},
         {translateY: 0, delay: 100, easing: 'easeOutBounce'}
       ],
-      duration: 1500
+      duration: 2500
     })
 }
+    // .add({
+    //   targets: '#dotAnimation',
+    //   keyframes: [
+    //     { translateY: 100, delay: 800, easing: 'easeOutBounce' },
+    //     { translateX: 10, delay: 500, easing: 'easeOutBounce' },
+    //     { translateX: -10, delay: 500, easing: 'easeOutBounce' },
+    //     { translateX: 0, delay: 500, easing: 'easeOutBounce' },
+    //     { translateY: -50, delay: 500, easing: 'easeOutBounce' }
+    //   ],
+    //   duration: 500,
+    //   loop: 2,
+    //   // direction: 'reverse'
+    // })
+    // .add({
+    //   targets: '#bigDotAnimation',
+    //   keyframes: [
+    //     { translateX: 110, delay: 500, easing: 'easeOutExpo' },
+    //     { translateX: -110, delay: 1500, easing: 'easeOutExpo' }
+    //   ]
+    // })
