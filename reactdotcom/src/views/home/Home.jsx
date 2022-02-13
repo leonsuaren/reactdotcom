@@ -21,7 +21,6 @@ export const Home = () => {
   }, []);
 
   return (
-    <PageLayout>
       <HomeContainer id='homeContainerAnimation'>
         <hr />
         <br />
@@ -38,6 +37,5 @@ export const Home = () => {
           <HeadTitle>How it works !</HeadTitle>
         </HeadContainer>
       </HomeContainer>
-    </PageLayout>
   )
 }

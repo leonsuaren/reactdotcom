@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { GetContainer, Button, WelcomeText, Span, Background, DotAnimation, Dot, OutsiteDot } from './styled';
 
 export const GetStarted = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   var animation;
   useEffect(() => {
     anime(startButtonAnimation);
@@ -26,7 +26,7 @@ export const GetStarted = () => {
 
   const hangleOnClick = () => {
     animation.play();
-    // setTimeout(() => { navigate('/home') }, 1000);
+    setTimeout(() => { navigate('/home') }, 1000);
   }
 
   return (

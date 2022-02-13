@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 
 import { GlobalStyled } from './global/globalStyled';
 
@@ -14,10 +14,16 @@ function App() {
       <GlobalStyled />
       <Router>
         <Routes>
-          <Route path='/' element={<GetStarted />} />
-          <Route path='/home' element={<Home />} />
-          <Route path='/components' element={<Components />} />
+          <Route index path='/' element={<GetStarted />} />
         </Routes>
+        <PageLayout>
+          <Routes>
+            <Route>
+              <Route path='/home' element={<Home />} />
+              <Route path='/components' element={<Components />} />
+            </Route>
+          </Routes>
+        </PageLayout>
       </Router>
     </div>
   );

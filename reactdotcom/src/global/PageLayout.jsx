@@ -1,7 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Menu } from './../components/menu';
 import { OnThisPage } from './../components/on-this-page';
 import styled from 'styled-components';
+import { Outlet } from 'react-router-dom';
 
 const Container = styled.div`
   display: grid;
